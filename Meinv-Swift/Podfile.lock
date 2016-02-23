@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (2.0.2)
+  - JGProgressHUD (1.3.1)
+  - Kanna (1.0.5)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 2.0)
+  - JGProgressHUD
+  - Kanna
+  - SDWebImage (~> 3.7)
+
+SPEC CHECKSUMS:
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
+  JGProgressHUD: 153053a21d81208cb5f659691996bcefce6a9885
+  Kanna: 1df5cd995dc1f3a282e3dcf7521cfef2f069ac4d
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+
+PODFILE CHECKSUM: a3c93471b6c1efdec19d91e313b7b5633f5fea37
+
+COCOAPODS: 1.0.0.beta.3
