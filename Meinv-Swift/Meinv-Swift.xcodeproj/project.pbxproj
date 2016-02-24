@@ -12,6 +12,17 @@
 		04800F5A1C7C331000589ED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04800F581C7C331000589ED2 /* Main.storyboard */; };
 		04800F5C1C7C331000589ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04800F5B1C7C331000589ED2 /* Assets.xcassets */; };
 		04800F5F1C7C331000589ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04800F5D1C7C331000589ED2 /* LaunchScreen.storyboard */; };
+		04F3FDB11C7D9958006C7AE4 /* BrowserCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDA21C7D9958006C7AE4 /* BrowserCellDelegate.swift */; };
+		04F3FDB21C7D9958006C7AE4 /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDA31C7D9958006C7AE4 /* PhotoBrowserCell.swift */; };
+		04F3FDB31C7D9958006C7AE4 /* PhotoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDA41C7D9958006C7AE4 /* PhotoBrowserView.swift */; };
+		04F3FDB41C7D9958006C7AE4 /* RMDownloadIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDA51C7D9958006C7AE4 /* RMDownloadIndicator.swift */; };
+		04F3FDB51C7D9958006C7AE4 /* CS1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDA81C7D9958006C7AE4 /* CS1TableViewController.swift */; };
+		04F3FDB61C7D9958006C7AE4 /* ZNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDA91C7D9958006C7AE4 /* ZNViewController.swift */; };
+		04F3FDB71C7D9958006C7AE4 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDAA1C7D9958006C7AE4 /* Header.swift */; };
+		04F3FDB81C7D9958006C7AE4 /* StringSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDAC1C7D9958006C7AE4 /* StringSize.swift */; };
+		04F3FDB91C7D9958006C7AE4 /* UIColor-Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDAD1C7D9958006C7AE4 /* UIColor-Random.swift */; };
+		04F3FDBA1C7D9958006C7AE4 /* ZNCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDAF1C7D9958006C7AE4 /* ZNCollectionViewCell.swift */; };
+		04F3FDBB1C7D9958006C7AE4 /* ZNTopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3FDB01C7D9958006C7AE4 /* ZNTopMenuView.swift */; };
 		DEBB0AD47D745E8F7A9370CB /* Pods_Meinv_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012B7F83632C839FA9AD9C83 /* Pods_Meinv_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +40,17 @@
 		04800F741C7C331000589ED2 /* Meinv_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meinv_SwiftUITests.swift; sourceTree = "<group>"; };
 		04800F761C7C331000589ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F3FD9C1C7D48C4006C7AE4 /* Meinv-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Meinv-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		04F3FDA21C7D9958006C7AE4 /* BrowserCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserCellDelegate.swift; sourceTree = "<group>"; };
+		04F3FDA31C7D9958006C7AE4 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
+		04F3FDA41C7D9958006C7AE4 /* PhotoBrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserView.swift; sourceTree = "<group>"; };
+		04F3FDA51C7D9958006C7AE4 /* RMDownloadIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMDownloadIndicator.swift; sourceTree = "<group>"; };
+		04F3FDA81C7D9958006C7AE4 /* CS1TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CS1TableViewController.swift; sourceTree = "<group>"; };
+		04F3FDA91C7D9958006C7AE4 /* ZNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNViewController.swift; sourceTree = "<group>"; };
+		04F3FDAA1C7D9958006C7AE4 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		04F3FDAC1C7D9958006C7AE4 /* StringSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSize.swift; sourceTree = "<group>"; };
+		04F3FDAD1C7D9958006C7AE4 /* UIColor-Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Random.swift"; sourceTree = "<group>"; };
+		04F3FDAF1C7D9958006C7AE4 /* ZNCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNCollectionViewCell.swift; sourceTree = "<group>"; };
+		04F3FDB01C7D9958006C7AE4 /* ZNTopMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNTopMenuView.swift; sourceTree = "<group>"; };
 		465489C1322241BDB32656C9 /* Pods-Meinv-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meinv-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meinv-Swift/Pods-Meinv-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		A096BF40243A0535C1B3BAD3 /* Pods-Meinv-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meinv-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meinv-Swift/Pods-Meinv-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +90,7 @@
 		04800F531C7C331000589ED2 /* Meinv-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				04F3FDA01C7D9958006C7AE4 /* ThridFramework */,
 				04800F541C7C331000589ED2 /* AppDelegate.swift */,
 				04800F561C7C331000589ED2 /* ViewController.swift */,
 				04800F581C7C331000589ED2 /* Main.storyboard */,
@@ -95,6 +118,64 @@
 				04800F761C7C331000589ED2 /* Info.plist */,
 			);
 			path = "Meinv-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		04F3FDA01C7D9958006C7AE4 /* ThridFramework */ = {
+			isa = PBXGroup;
+			children = (
+				04F3FDA11C7D9958006C7AE4 /* Browser */,
+				04F3FDA61C7D9958006C7AE4 /* ZNScrollMenu */,
+			);
+			path = ThridFramework;
+			sourceTree = "<group>";
+		};
+		04F3FDA11C7D9958006C7AE4 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				04F3FDA21C7D9958006C7AE4 /* BrowserCellDelegate.swift */,
+				04F3FDA31C7D9958006C7AE4 /* PhotoBrowserCell.swift */,
+				04F3FDA41C7D9958006C7AE4 /* PhotoBrowserView.swift */,
+				04F3FDA51C7D9958006C7AE4 /* RMDownloadIndicator.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		04F3FDA61C7D9958006C7AE4 /* ZNScrollMenu */ = {
+			isa = PBXGroup;
+			children = (
+				04F3FDA71C7D9958006C7AE4 /* Controller */,
+				04F3FDAA1C7D9958006C7AE4 /* Header.swift */,
+				04F3FDAB1C7D9958006C7AE4 /* Tools */,
+				04F3FDAE1C7D9958006C7AE4 /* View */,
+			);
+			path = ZNScrollMenu;
+			sourceTree = "<group>";
+		};
+		04F3FDA71C7D9958006C7AE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F3FDA81C7D9958006C7AE4 /* CS1TableViewController.swift */,
+				04F3FDA91C7D9958006C7AE4 /* ZNViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04F3FDAB1C7D9958006C7AE4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				04F3FDAC1C7D9958006C7AE4 /* StringSize.swift */,
+				04F3FDAD1C7D9958006C7AE4 /* UIColor-Random.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		04F3FDAE1C7D9958006C7AE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F3FDAF1C7D9958006C7AE4 /* ZNCollectionViewCell.swift */,
+				04F3FDB01C7D9958006C7AE4 /* ZNTopMenuView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E426366944DD75368E19AA7A /* Pods */ = {
@@ -236,8 +317,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F3FDB61C7D9958006C7AE4 /* ZNViewController.swift in Sources */,
+				04F3FDB71C7D9958006C7AE4 /* Header.swift in Sources */,
+				04F3FDB31C7D9958006C7AE4 /* PhotoBrowserView.swift in Sources */,
+				04F3FDB51C7D9958006C7AE4 /* CS1TableViewController.swift in Sources */,
+				04F3FDBA1C7D9958006C7AE4 /* ZNCollectionViewCell.swift in Sources */,
 				04800F571C7C331000589ED2 /* ViewController.swift in Sources */,
+				04F3FDB91C7D9958006C7AE4 /* UIColor-Random.swift in Sources */,
+				04F3FDB41C7D9958006C7AE4 /* RMDownloadIndicator.swift in Sources */,
+				04F3FDBB1C7D9958006C7AE4 /* ZNTopMenuView.swift in Sources */,
+				04F3FDB11C7D9958006C7AE4 /* BrowserCellDelegate.swift in Sources */,
+				04F3FDB81C7D9958006C7AE4 /* StringSize.swift in Sources */,
 				04800F551C7C331000589ED2 /* AppDelegate.swift in Sources */,
+				04F3FDB21C7D9958006C7AE4 /* PhotoBrowserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
