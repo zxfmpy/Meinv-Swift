@@ -28,6 +28,7 @@
 		04800F6B1C7C331000589ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04800F741C7C331000589ED2 /* Meinv_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meinv_SwiftUITests.swift; sourceTree = "<group>"; };
 		04800F761C7C331000589ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F3FD9C1C7D48C4006C7AE4 /* Meinv-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Meinv-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		465489C1322241BDB32656C9 /* Pods-Meinv-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meinv-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meinv-Swift/Pods-Meinv-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		A096BF40243A0535C1B3BAD3 /* Pods-Meinv-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meinv-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meinv-Swift/Pods-Meinv-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +74,7 @@
 				04800F5B1C7C331000589ED2 /* Assets.xcassets */,
 				04800F5D1C7C331000589ED2 /* LaunchScreen.storyboard */,
 				04800F601C7C331000589ED2 /* Info.plist */,
+				04F3FD9C1C7D48C4006C7AE4 /* Meinv-Swift-Bridging-Header.h */,
 			);
 			path = "Meinv-Swift";
 			sourceTree = "<group>";
@@ -349,10 +351,13 @@
 			baseConfigurationReference = A096BF40243A0535C1B3BAD3 /* Pods-Meinv-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Meinv-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lorwy.Meinv-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meinv-Swift/Meinv-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -361,10 +366,12 @@
 			baseConfigurationReference = 465489C1322241BDB32656C9 /* Pods-Meinv-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Meinv-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lorwy.Meinv-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meinv-Swift/Meinv-Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
