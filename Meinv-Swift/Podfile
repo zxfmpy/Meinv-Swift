@@ -10,6 +10,8 @@ pod 'JGProgressHUD'
 pod ‘MJRefresh’
 pod 'SnapKit'
 pod 'CHTCollectionViewWaterfallLayout'
+pod 'ObjectMapper'
+pod 'AlamofireObjectMapper'
 
 end
 

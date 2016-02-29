@@ -23,7 +23,7 @@ class PhotoInfo: NSObject {
     var imageSize: CGSize = CGSize(width: 0.0, height: 0.0)
     
     class func photo(url:String) -> PhotoInfo {
-        var photo:PhotoInfo = PhotoInfo()
+        let photo:PhotoInfo = PhotoInfo()
         photo.imageUrl = url
         return photo
     }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044CA44F1C84129E005E9D6A /* MNDouListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CA44E1C84129E005E9D6A /* MNDouListController.swift */; };
+		044CA4551C842EFA005E9D6A /* MNDouListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CA4541C842EFA005E9D6A /* MNDouListCell.swift */; };
+		044CA4581C842FD4005E9D6A /* MNDouListsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CA4571C842FD4005E9D6A /* MNDouListsResponse.swift */; };
 		04683E4B1C83E7BE00E98421 /* MNBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04683E4A1C83E7BE00E98421 /* MNBaseController.swift */; };
 		047B58041C7EE2CE00A14D3B /* PictureCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B58031C7EE2CE00A14D3B /* PictureCategoryController.swift */; };
 		047B58071C7EE33F00A14D3B /* PictureHomeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B58061C7EE33F00A14D3B /* PictureHomeImageCell.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		012B7F83632C839FA9AD9C83 /* Pods_Meinv_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meinv_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		044CA44E1C84129E005E9D6A /* MNDouListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListController.swift; sourceTree = "<group>"; };
+		044CA4541C842EFA005E9D6A /* MNDouListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListCell.swift; sourceTree = "<group>"; };
+		044CA4571C842FD4005E9D6A /* MNDouListsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListsResponse.swift; sourceTree = "<group>"; };
 		04683E4A1C83E7BE00E98421 /* MNBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNBaseController.swift; sourceTree = "<group>"; };
 		047B58031C7EE2CE00A14D3B /* PictureCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCategoryController.swift; sourceTree = "<group>"; };
 		047B58061C7EE33F00A14D3B /* PictureHomeImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureHomeImageCell.swift; sourceTree = "<group>"; };
@@ -75,6 +81,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044CA4561C842F1F005E9D6A /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
 		04683E491C83E78D00E98421 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 		047B58051C7EE30F00A14D3B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				044CA4541C842EFA005E9D6A /* MNDouListCell.swift */,
 				047B58061C7EE33F00A14D3B /* PictureHomeImageCell.swift */,
 			);
 			path = Views;
@@ -133,6 +147,7 @@
 		04800F531C7C331000589ED2 /* Meinv-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				044CA4561C842F1F005E9D6A /* HttpClient */,
 				047B58011C7EE28900A14D3B /* Controllers */,
 				04F3FDC51C7D9A6C006C7AE4 /* Extension */,
 				04F3FDC61C7D9A6C006C7AE4 /* Model */,
@@ -168,6 +183,7 @@
 		04CFFC751C83E40A00680388 /* DouList */ = {
 			isa = PBXGroup;
 			children = (
+				044CA44E1C84129E005E9D6A /* MNDouListController.swift */,
 			);
 			path = DouList;
 			sourceTree = "<group>";
@@ -242,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				04F3FDC91C7D9B18006C7AE4 /* MeiTu.swift */,
+				044CA4571C842FD4005E9D6A /* MNDouListsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +316,7 @@
 				TargetAttributes = {
 					04800F501C7C331000589ED2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F73H2FE89M;
 					};
 				};
 			};
@@ -388,6 +406,7 @@
 			files = (
 				04F3FDB61C7D9958006C7AE4 /* ZNViewController.swift in Sources */,
 				04F3FDC81C7D9AA9006C7AE4 /* UIColorExtension.swift in Sources */,
+				044CA4551C842EFA005E9D6A /* MNDouListCell.swift in Sources */,
 				04F3FDCA1C7D9B18006C7AE4 /* MeiTu.swift in Sources */,
 				04F3FDB71C7D9958006C7AE4 /* Header.swift in Sources */,
 				04F3FDB31C7D9958006C7AE4 /* PhotoBrowserView.swift in Sources */,
@@ -397,9 +416,11 @@
 				04F3FDB91C7D9958006C7AE4 /* UIColor-Random.swift in Sources */,
 				04F3FDB41C7D9958006C7AE4 /* RMDownloadIndicator.swift in Sources */,
 				04F3FDBB1C7D9958006C7AE4 /* ZNTopMenuView.swift in Sources */,
+				044CA44F1C84129E005E9D6A /* MNDouListController.swift in Sources */,
 				04F3FDB11C7D9958006C7AE4 /* BrowserCellDelegate.swift in Sources */,
 				04F3FDB81C7D9958006C7AE4 /* StringSize.swift in Sources */,
 				04800F551C7C331000589ED2 /* AppDelegate.swift in Sources */,
+				044CA4581C842FD4005E9D6A /* MNDouListsResponse.swift in Sources */,
 				047B58071C7EE33F00A14D3B /* PictureHomeImageCell.swift in Sources */,
 				047B58041C7EE2CE00A14D3B /* PictureCategoryController.swift in Sources */,
 				04F3FDB21C7D9958006C7AE4 /* PhotoBrowserCell.swift in Sources */,
@@ -517,7 +538,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Meinv-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lorwy.Meinv-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,7 +555,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Meinv-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lorwy.Meinv-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";

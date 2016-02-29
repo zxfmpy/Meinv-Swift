@@ -3,37 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="gGt-yk-sjp">
-            <objects>
-                <tableViewController id="IfD-ie-ZbU" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jS5-E0-mWz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wv4-qQ-hsY">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wv4-qQ-hsY" id="Ssx-mh-Gvj">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="IfD-ie-ZbU" id="9gO-sf-12r"/>
-                            <outlet property="delegate" destination="IfD-ie-ZbU" id="6MR-Ls-BmK"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Lbq-hj-xK1"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Adc-Ie-wZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1712" y="1156"/>
-        </scene>
         <!--豆列-->
         <scene sceneID="LWx-ch-NBj">
             <objects>
@@ -44,12 +16,101 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="IfD-ie-ZbU" kind="relationship" relationship="rootViewController" id="4Kw-yg-Vn6"/>
+                        <segue destination="gm2-wN-Whw" kind="relationship" relationship="rootViewController" id="qHn-aM-C4A"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqK-eJ-s6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="892" y="1155"/>
+        </scene>
+        <!--精品豆列-->
+        <scene sceneID="drC-1l-AC6">
+            <objects>
+                <viewController title="精品豆列" id="gm2-wN-Whw" customClass="MNDouListController" customModule="Meinv_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YVU-NM-MtW"/>
+                        <viewControllerLayoutGuide type="bottom" id="e9B-oc-Dko"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k7Q-A8-KZC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="90" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-mV-Lpm">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MNDouListCellIdentifier" id="9ok-Xu-jvp" customClass="MNDouListCell" customModule="Meinv_Swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="113.5" width="600" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9ok-Xu-jvp" id="wOP-oC-3de">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-N7-vKI">
+                                                    <rect key="frame" x="10" y="4" width="81.5" height="81.5"/>
+                                                    <color key="backgroundColor" red="1" green="0.53435975313186646" blue="0.11059508472681046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="zgp-N7-vKI" secondAttribute="height" multiplier="1:1" id="yeg-1U-lYt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美女。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-aa-vs3">
+                                                    <rect key="frame" x="105" y="9" width="85" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1559人关注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daC-jK-4Ny">
+                                                    <rect key="frame" x="105" y="35" width="69.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="daC-jK-4Ny" firstAttribute="top" secondItem="mHF-aa-vs3" secondAttribute="bottom" constant="5.5" id="4ge-tZ-ZKb"/>
+                                                <constraint firstItem="daC-jK-4Ny" firstAttribute="leading" secondItem="mHF-aa-vs3" secondAttribute="leading" id="5YA-CZ-R04"/>
+                                                <constraint firstAttribute="bottom" secondItem="zgp-N7-vKI" secondAttribute="bottom" constant="4" id="PPl-Y1-b7W"/>
+                                                <constraint firstItem="mHF-aa-vs3" firstAttribute="leading" secondItem="zgp-N7-vKI" secondAttribute="trailing" constant="13.5" id="cAK-8W-632"/>
+                                                <constraint firstItem="mHF-aa-vs3" firstAttribute="top" secondItem="zgp-N7-vKI" secondAttribute="top" constant="5" id="cjU-3O-icq"/>
+                                                <constraint firstItem="zgp-N7-vKI" firstAttribute="top" secondItem="wOP-oC-3de" secondAttribute="top" constant="4" id="d4M-3M-6Km"/>
+                                                <constraint firstItem="zgp-N7-vKI" firstAttribute="leading" secondItem="wOP-oC-3de" secondAttribute="leading" constant="10" id="o0r-pK-BWF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="coverImageView" destination="zgp-N7-vKI" id="4hp-Lu-yfZ"/>
+                                            <outlet property="followersLabel" destination="daC-jK-4Ny" id="lzn-VJ-p1z"/>
+                                            <outlet property="titleLabel" destination="mHF-aa-vs3" id="CGu-Ql-HcD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gm2-wN-Whw" id="cfk-Cj-pnN"/>
+                                    <outlet property="delegate" destination="gm2-wN-Whw" id="bc0-iZ-fDy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MN2-mV-Lpm" firstAttribute="top" secondItem="YVU-NM-MtW" secondAttribute="bottom" id="HGR-41-2Ug"/>
+                            <constraint firstAttribute="trailing" secondItem="MN2-mV-Lpm" secondAttribute="trailing" id="QuT-Hg-83Y"/>
+                            <constraint firstItem="e9B-oc-Dko" firstAttribute="top" secondItem="MN2-mV-Lpm" secondAttribute="bottom" id="fqc-Qr-urF"/>
+                            <constraint firstItem="MN2-mV-Lpm" firstAttribute="leading" secondItem="k7Q-A8-KZC" secondAttribute="leading" id="leK-36-zYJ"/>
+                            <constraint firstItem="MN2-mV-Lpm" firstAttribute="top" secondItem="YVU-NM-MtW" secondAttribute="bottom" id="nDy-Ex-0au"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nDy-Ex-0au"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jbh-2f-zaM"/>
+                    <connections>
+                        <outlet property="douListTableView" destination="MN2-mV-Lpm" id="ohX-lo-PS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fe2-1n-QPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="1155"/>
         </scene>
         <!--分类-->
         <scene sceneID="xOn-1E-LtQ">
@@ -70,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="892" y="331"/>
         </scene>
-        <!--Picture Category Controller-->
+        <!--豆瓣美女-->
         <scene sceneID="HXh-YI-r2S">
             <objects>
-                <viewController id="p38-gJ-UId" customClass="PictureCategoryController" customModule="Meinv_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="豆瓣美女" id="p38-gJ-UId" customClass="PictureCategoryController" customModule="Meinv_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gyp-Cm-p7b"/>
                         <viewControllerLayoutGuide type="bottom" id="xAN-6a-bEx"/>

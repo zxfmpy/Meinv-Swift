@@ -78,6 +78,7 @@ class PictureCategoryController: MNBaseController, TopMenuDelegate, UICollection
     
     func setupCollectionView() {
         let layout = CHTCollectionViewWaterfallLayout()
+        layout.columnCount = 3;
         layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
         
         self.collectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
