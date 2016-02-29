@@ -8,6 +8,8 @@ pod 'Alamofire', '~> 2.0'
 pod 'SDWebImage', '~>3.7'
 pod 'JGProgressHUD'
 pod ‘MJRefresh’
+pod 'SnapKit'
+pod 'CHTCollectionViewWaterfallLayout'
 
 end
 
