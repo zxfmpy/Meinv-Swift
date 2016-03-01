@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import ObjectMapper
+import JGProgressHUD
 
 
 class MNDouListController: MNBaseController, UITableViewDelegate, UITableViewDataSource {
@@ -31,15 +32,24 @@ class MNDouListController: MNBaseController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "精品豆列"
-        self.douListTableView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0)
         self.getDouLists()
     }
     
     func getDouLists() {
+        let HUD = JGProgressHUD(style: JGProgressHUDStyle.Light)
+        HUD.showInView(self.view,animated: true)
         let url:String? = "https://frodo.douban.com/api/v2/user/81012634/following_doulists"
         Alamofire.request(Method.GET, url!, parameters: parameters, encoding: ParameterEncoding.URL, headers: ["User-Agent":"api-client/0.1.3 com.douban.frodo/3.5.0 iOS/9.2.1 iPhone7,2"]).responseObject { (doulist:MNDouListsResponse?, error:ErrorType?) -> Void in
-            self.doulists.addObjectsFromArray(doulist!.doulists!)
-            self.douListTableView?.reloadData()
+            if error == nil {
+                self.doulists.addObjectsFromArray(doulist!.doulists!)
+                self.douListTableView?.reloadData()
+            }else{
+                HUD.textLabel.text = "网络有问题，请检查网络"
+                HUD.indicatorView = JGProgressHUDIndicatorView()
+                HUD.showInView(self.view, animated: true)
+                HUD.dismissAfterDelay(1.0, animated: true)
+            }
+            HUD.dismiss()
         }
     }
     
@@ -60,7 +70,7 @@ class MNDouListController: MNBaseController, UITableViewDelegate, UITableViewDat
     
     // MARK: - UITableViewDelegate
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+        return 1
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -69,6 +79,10 @@ class MNDouListController: MNBaseController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 90
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView(frame: CGRectZero)
     }
     
 }

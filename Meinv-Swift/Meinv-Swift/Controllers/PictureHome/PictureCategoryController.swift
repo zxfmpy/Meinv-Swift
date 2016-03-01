@@ -147,16 +147,15 @@ class PictureCategoryController: MNBaseController, TopMenuDelegate, UICollection
         // 标记正在获取，其他线程来则返回
         populatingPhotos = true
         let pageUrl = getPageUrl()
+        //转菊花，开始解析
+        let HUD = JGProgressHUD(style: JGProgressHUDStyle.Light)
+        HUD.showInView(self.view,animated: true)
         Alamofire.request(.GET, pageUrl).responseString(completionHandler: { (request, response, result) -> Void in
             //
             let isSuccess = result.isSuccess
             let html = result.value
-            let HUD = JGProgressHUD(style: JGProgressHUDStyle.Light)
             
             if isSuccess == true {
-                //转菊花，开始解析
-                HUD.textLabel.text = "靓图即将呈现"
-                HUD.showInView(self.view,animated: true)
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0),{ () -> Void in
                     //用photos保存临时数据
                     var urls = [String]()

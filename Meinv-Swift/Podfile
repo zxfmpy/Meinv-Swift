@@ -12,6 +12,7 @@ pod 'SnapKit'
 pod 'CHTCollectionViewWaterfallLayout'
 pod 'ObjectMapper'
 pod 'AlamofireObjectMapper'
+pod 'SDWebImage/WebP'
 
 end
 
