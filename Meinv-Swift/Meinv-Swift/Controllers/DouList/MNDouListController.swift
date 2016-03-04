@@ -65,6 +65,7 @@ class MNDouListController: MNBaseController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: MNDouListCell = tableView.dequeueReusableCellWithIdentifier("MNDouListCellIdentifier", forIndexPath: indexPath) as! MNDouListCell
         cell.modelItem = doulists.objectAtIndex(indexPath.section) as? MNDouListItem
+        cell.selectionStyle = .None
         return cell
     }
     
@@ -85,4 +86,15 @@ class MNDouListController: MNBaseController, UITableViewDelegate, UITableViewDat
         return UIView(frame: CGRectZero)
     }
     
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "kToDouListItemVCSegue" {
+            let cell = sender as! MNDouListCell
+            segue.destinationViewController.navigationItem.title = cell.modelItem.title
+        }
+    }
+
 }

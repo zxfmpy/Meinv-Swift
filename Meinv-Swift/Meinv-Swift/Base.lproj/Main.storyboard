@@ -48,7 +48,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-N7-vKI">
                                                     <rect key="frame" x="10" y="4" width="81.5" height="81.5"/>
-                                                    <color key="backgroundColor" red="1" green="0.53435975313186646" blue="0.11059508472681046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="zgp-N7-vKI" secondAttribute="height" multiplier="1:1" id="yeg-1U-lYt"/>
                                                     </constraints>
@@ -80,6 +79,7 @@
                                             <outlet property="coverImageView" destination="zgp-N7-vKI" id="4hp-Lu-yfZ"/>
                                             <outlet property="followersLabel" destination="daC-jK-4Ny" id="lzn-VJ-p1z"/>
                                             <outlet property="titleLabel" destination="mHF-aa-vs3" id="CGu-Ql-HcD"/>
+                                            <segue destination="khg-2L-uWa" kind="show" identifier="kToDouListItemVCSegue" id="8y3-h1-5jq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -105,6 +105,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fe2-1n-QPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1642" y="1155"/>
+        </scene>
+        <!--Dou List Item Controller-->
+        <scene sceneID="UUe-Yc-hQl">
+            <objects>
+                <viewController id="khg-2L-uWa" customClass="MNDouListItemController" customModule="Meinv_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ttl-Rl-eI3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4qs-f6-NS7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xqw-nl-dUN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8BF-bq-Avp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="btU-q2-9XC">
+                                    <size key="itemSize" width="132" height="135"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kMNDouListItemCollectionViewCellIdentifier" id="D9X-5g-ZXH" customClass="MNDouListItemCollectionViewCell" customModule="Meinv_Swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="132" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="132" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qKK-K7-Nw7">
+                                                    <rect key="frame" x="5" y="5" width="122" height="125"/>
+                                                    <color key="backgroundColor" red="0.1843137255" green="0.69803921570000005" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="豆瓣大长腿" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-or-4YA">
+                                                    <rect key="frame" x="29" y="109" width="75" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="qKK-K7-Nw7" firstAttribute="top" secondItem="D9X-5g-ZXH" secondAttribute="top" constant="5" id="1Gp-kn-dgH"/>
+                                            <constraint firstAttribute="bottom" secondItem="qKK-K7-Nw7" secondAttribute="bottom" constant="5" id="A9n-8f-eMo"/>
+                                            <constraint firstAttribute="trailing" secondItem="qKK-K7-Nw7" secondAttribute="trailing" constant="5" id="dac-fL-SZJ"/>
+                                            <constraint firstItem="GPF-or-4YA" firstAttribute="centerX" secondItem="D9X-5g-ZXH" secondAttribute="centerX" id="hT5-2N-4gP"/>
+                                            <constraint firstItem="qKK-K7-Nw7" firstAttribute="leading" secondItem="D9X-5g-ZXH" secondAttribute="leading" constant="5" id="rRB-Ph-r6H"/>
+                                            <constraint firstAttribute="bottom" secondItem="GPF-or-4YA" secondAttribute="bottom" constant="8" id="wjK-hT-wd3"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="qKK-K7-Nw7" id="Nh2-lZ-jBi"/>
+                                            <outlet property="titleLabel" destination="GPF-or-4YA" id="Xet-gk-MR7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="khg-2L-uWa" id="Wmm-ia-5rk"/>
+                                    <outlet property="delegate" destination="khg-2L-uWa" id="BRx-Fx-sZk"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8BF-bq-Avp" firstAttribute="leading" secondItem="xqw-nl-dUN" secondAttribute="leading" id="92j-Ar-R8v"/>
+                            <constraint firstAttribute="bottom" secondItem="8BF-bq-Avp" secondAttribute="bottom" id="IcU-my-y30"/>
+                            <constraint firstAttribute="trailing" secondItem="8BF-bq-Avp" secondAttribute="trailing" id="b75-Ly-nc6"/>
+                            <constraint firstItem="4qs-f6-NS7" firstAttribute="top" secondItem="8BF-bq-Avp" secondAttribute="bottom" id="hTb-O6-1t6"/>
+                            <constraint firstItem="8BF-bq-Avp" firstAttribute="top" secondItem="Ttl-Rl-eI3" secondAttribute="bottom" id="i2o-UN-Tz9"/>
+                            <constraint firstItem="8BF-bq-Avp" firstAttribute="top" secondItem="xqw-nl-dUN" secondAttribute="top" id="qEi-Kw-7jp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="i2o-UN-Tz9"/>
+                                <exclude reference="hTb-O6-1t6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="8BF-bq-Avp" id="LC7-Fg-Sfu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlx-od-acf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2331" y="1155"/>
         </scene>
         <!--分类-->
         <scene sceneID="xOn-1E-LtQ">

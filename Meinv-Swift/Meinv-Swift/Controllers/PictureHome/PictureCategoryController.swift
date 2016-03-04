@@ -219,7 +219,7 @@ class PictureCategoryController: MNBaseController, TopMenuDelegate, UICollection
     
     //MARK: - UICollectionViewDelegateFlowLayout
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: self.view.frame.width, height: topViewHeight + 10)
+        return CGSize(width: self.view.frame.width, height: topViewHeight + 20)
     }
     
     //MARK: - collectionView Delegate

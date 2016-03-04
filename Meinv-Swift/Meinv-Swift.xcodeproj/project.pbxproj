@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044787601C856DE800195638 /* MNDouListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447875F1C856DE800195638 /* MNDouListItemController.swift */; };
+		044787621C857F4100195638 /* MNDouListItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044787611C857F4100195638 /* MNDouListItemCollectionViewCell.swift */; };
 		044CA44F1C84129E005E9D6A /* MNDouListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CA44E1C84129E005E9D6A /* MNDouListController.swift */; };
 		044CA4551C842EFA005E9D6A /* MNDouListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CA4541C842EFA005E9D6A /* MNDouListCell.swift */; };
 		044CA4581C842FD4005E9D6A /* MNDouListsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CA4571C842FD4005E9D6A /* MNDouListsResponse.swift */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		012B7F83632C839FA9AD9C83 /* Pods_Meinv_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meinv_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0447875F1C856DE800195638 /* MNDouListItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListItemController.swift; sourceTree = "<group>"; };
+		044787611C857F4100195638 /* MNDouListItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		044CA44E1C84129E005E9D6A /* MNDouListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListController.swift; sourceTree = "<group>"; };
 		044CA4541C842EFA005E9D6A /* MNDouListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListCell.swift; sourceTree = "<group>"; };
 		044CA4571C842FD4005E9D6A /* MNDouListsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDouListsResponse.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			children = (
 				044CA4541C842EFA005E9D6A /* MNDouListCell.swift */,
 				047B58061C7EE33F00A14D3B /* PictureHomeImageCell.swift */,
+				044787611C857F4100195638 /* MNDouListItemCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				044CA44E1C84129E005E9D6A /* MNDouListController.swift */,
+				0447875F1C856DE800195638 /* MNDouListItemController.swift */,
 			);
 			path = DouList;
 			sourceTree = "<group>";
@@ -407,6 +413,7 @@
 				04F3FDB61C7D9958006C7AE4 /* ZNViewController.swift in Sources */,
 				04F3FDC81C7D9AA9006C7AE4 /* UIColorExtension.swift in Sources */,
 				044CA4551C842EFA005E9D6A /* MNDouListCell.swift in Sources */,
+				044787621C857F4100195638 /* MNDouListItemCollectionViewCell.swift in Sources */,
 				04F3FDCA1C7D9B18006C7AE4 /* MeiTu.swift in Sources */,
 				04F3FDB71C7D9958006C7AE4 /* Header.swift in Sources */,
 				04F3FDB31C7D9958006C7AE4 /* PhotoBrowserView.swift in Sources */,
@@ -422,6 +429,7 @@
 				04800F551C7C331000589ED2 /* AppDelegate.swift in Sources */,
 				044CA4581C842FD4005E9D6A /* MNDouListsResponse.swift in Sources */,
 				047B58071C7EE33F00A14D3B /* PictureHomeImageCell.swift in Sources */,
+				044787601C856DE800195638 /* MNDouListItemController.swift in Sources */,
 				047B58041C7EE2CE00A14D3B /* PictureCategoryController.swift in Sources */,
 				04F3FDB21C7D9958006C7AE4 /* PhotoBrowserCell.swift in Sources */,
 			);
