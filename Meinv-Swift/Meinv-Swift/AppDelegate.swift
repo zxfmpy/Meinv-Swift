@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("------测试 AppDelegate:didFinishLaunchingWithOptions-----");
         
+        print("----- 还在做饭哇 ----- ");
+        
         return true
     }
 
